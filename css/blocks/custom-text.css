@@ -1,0 +1,35 @@
+.custom-text-group {
+    display: grid;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(9, 9, 9, 0.15);
+}
+
+.custom-text-legend {
+    margin-bottom: 16px;
+    user-select: none;
+}
+
+.custom-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-text__field {
+    height: 25px;
+    width: 300px;
+    background-color: transparent;
+    outline: none;
+}
+
+.custom-text-group:hover {
+    border-bottom: 1px solid #AD8361;
+}
+
+.custom-text-group:focus {
+    border-bottom: 1px solid #AD8361;
+}
+
+.custom-text-group:has(.custom-text__field:disabled) {
+    opacity: 30%;
+    cursor: default;
+}
